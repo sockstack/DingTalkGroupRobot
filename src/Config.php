@@ -34,6 +34,7 @@ class Config
 
     /**
      * @param string $send_message_url
+     * @throws InvalidArgumentException
      */
     public function setSendMessageUrl(string $send_message_url)
     {

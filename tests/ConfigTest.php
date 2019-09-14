@@ -24,18 +24,18 @@ class ConfigTest extends TestCase
 
     /**
      * 测试传入参数
-     * @expectedException  InvalidArgumentException
      */
     public function testArgument()
     {
+        $this->expectException(InvalidArgumentException::class);
         $this->config->setSendMessageUrl("https://oapi.dingtalk.com/robot/send");
     }
 
     /**
      * 测试是否传入access_token
-     * @expectedException  InvalidArgumentException
      */
     public function testAccessToken() {
+        $this->expectException(InvalidArgumentException::class);
         $this->config->setSendMessageUrl("https://oapi.dingtalk.com/robot/send?a=b");
     }
 }
