@@ -59,7 +59,7 @@ class Robot implements RobotContract
     public function setMessage(Message $message): RobotContract
     {
         $messageData = new MessageData();
-        $messageData->setMessage($messageData);
+        $messageData->setMessage($message);
         $this->message = $messageData;
 
         return $this;
