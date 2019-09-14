@@ -1,0 +1,22 @@
+{
+    "name": "sockstack\/dingtalkgrouprobot",
+    "description": "a robot of DingTalk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sockstack",
+            "email": "lizoenn@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^5.0",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SockStack\\DingTalkGroupRobot\\": "src",
+            "SockStack\\Test\\": "test"
+        }
+    }
+}
